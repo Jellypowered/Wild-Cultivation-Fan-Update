@@ -18,7 +18,7 @@ namespace RWC_Code
 			var harmony = new Harmony(Id);
 			harmony.PatchAll(Assembly.GetExecutingAssembly());
 			LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
-		}
+        }
 
 		private static void Setup()
 		{
