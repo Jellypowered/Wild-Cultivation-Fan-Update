@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<RecipeDef>
-		<defName>ExtractSeed_Agave</defName>
-		<label>extract agave seeds</label>
-		<description>Extract seeds from Agave.</description>
+		<defName>ExtractSeed_Tinctoria</defName>
+		<label>extract tinctoria seeds</label>
+		<description>Extract seeds from Tinctoria leaves.</description>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>RawAgave</li>
+						<li>RawTinctoria</li>
 					</thingDefs>
 				</filter>
 				<count>4</count>
@@ -16,7 +16,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>RawAgave</li>
+				<li>RawTinctoria</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<jobString>Extracting seeds.</jobString>
@@ -24,8 +24,6 @@
 		<effectWorking>Cook</effectWorking>
 		<workSkill>Cooking</workSkill>
 		<workAmount>600</workAmount>
-		<products>
-			<!--<Seed_Agave>1</Seed_Agave>-->
-		</products>
+		<products></products>
 	</RecipeDef>
 </Defs>
