@@ -1,32 +1,32 @@
 <!-- Put LoadFolders.xml in root of mod, not in About. -->
 <loadFolders>
-	<!-- Load Vanilla Plants Expanded defs for simplicity. -->
-	<v1.3>
-		<li>/</li>
-		<li>1.3</li>
-		<li IfModActive="VanillaExpanded.VPlantsE">Mods/VanillaPlantsExpanded</li>
-		<li IfModActive="ludeon.rimworld.ideology">Mods/Ideology</li>
-		<li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
-	</v1.3>
-	<v1.4>
-		<li>/</li>
-		<li>1.4</li>
-		<li IfModActive="VanillaExpanded.VPlantsE">Mods/VanillaPlantsExpanded</li>
-		<li IfModActive="ludeon.rimworld.ideology">Mods/Ideology</li>
-		<li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
-	</v1.4>
-	<v1.5>
-		<li>/</li>
-		<li>1.5</li>
-		<li IfModActive="VanillaExpanded.VPlantsE">Mods/VanillaPlantsExpanded</li>
-		<li IfModActive="ludeon.rimworld.ideology">Mods/Ideology</li>
-		<li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
-	</v1.5>
-	<v1.6>
-		<li>/</li>
-		<li>1.6</li>
-		<li IfModActive="VanillaExpanded.VPlantsE">Mods/VanillaPlantsExpanded</li>
-		<li IfModActive="ludeon.rimworld.ideology">Mods/Ideology</li>
-		<li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
-	</v1.6>
+  <!-- Load Vanilla Plants Expanded defs for simplicity. -->
+  <v1.3>
+    <li>/</li>
+    <li>1.3</li>
+    <li IfModActive="VanillaExpanded.VPlantsE">Mods/VanillaPlantsExpanded</li>
+    <li IfModActive="ludeon.rimworld.ideology">Mods/Ideology</li>
+    <li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
+  </v1.3>
+  <v1.4>
+    <li>/</li>
+    <li>1.4</li>
+    <li IfModActive="VanillaExpanded.VPlantsE">Mods/VanillaPlantsExpanded</li>
+    <li IfModActive="ludeon.rimworld.ideology">Mods/Ideology</li>
+    <li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
+  </v1.4>
+  <v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li IfModActive="VanillaExpanded.VPlantsE">Mods/VanillaPlantsExpanded</li>
+    <li IfModActive="ludeon.rimworld.ideology">Mods/Ideology</li>
+    <li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
+  </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="VanillaExpanded.VPlantsE">Mods/VanillaPlantsExpanded</li>
+    <li IfModActive="ludeon.rimworld.ideology">Mods/Ideology</li>
+    <li IfModActive="Owlchemist.SeedsPleaseLite">Mods/SeedsPleaseLite</li>
+  </v1.6>
 </loadFolders>
