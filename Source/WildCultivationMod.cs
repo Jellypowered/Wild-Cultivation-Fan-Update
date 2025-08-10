@@ -12,36 +12,44 @@ namespace RWC_Code
 {
     public class WildCultivationMod : Mod
     {
-        public WildCultivationMod(ModContentPack content)
-            : base(content)
+        public WildCultivationMod(ModContentPack content) : base(content)
         {
-            const string Id = "net.saucypigeon.rimworld.mod.wildcultivation";
-            var harmony = new Harmony(Id);
+            var harmony = new Harmony("net.saucypigeon.rimworld.mod.wildcultivation");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            LongEventHandler.QueueLongEvent(Setup, "LibraryStartup", false, null);
+
+            // Run after all defs are loaded
+            LongEventHandler.ExecuteWhenFinished(Setup);
         }
+
 
         private static void Setup()
         {
-            // Update wild cotton harvest to standard cotton
-            ThingDef.Named("PlantWildCotton").plant.harvestedThingDef = ThingDefOf
-                .Plant_Cotton
-                .plant
-                .harvestedThingDef;
-            ThingDef.Named("PlantWildCotton").plant.harvestYield = ThingDefOf
-                .Plant_Cotton
-                .plant
-                .harvestYield;
-
-            // Update wild devilstrand harvest to standard devilstrand
-            ThingDef.Named("PlantWildDevilstrand").plant.harvestedThingDef = ThingDefOf
-                .Plant_Devilstrand
-                .plant
-                .harvestedThingDef;
-            ThingDef.Named("PlantWildDevilstrand").plant.harvestYield = ThingDefOf
-                .Plant_Devilstrand
-                .plant
-                .harvestYield;
+            TryAlignWildHarvest("PlantWildCotton", RWC_ThingDefOf.Plant_Cotton);
+            TryAlignWildHarvest("PlantWildDevilstrand", RWC_ThingDefOf.Plant_Devilstrand);
         }
+
+        private static void TryAlignWildHarvest(string wildDefName, ThingDef cultivated)
+        {
+            var wild = DefDatabase<ThingDef>.GetNamedSilentFail(wildDefName);
+            if (wild?.plant == null || cultivated?.plant == null) return;
+
+            bool changed = false;
+
+            if (wild.plant.harvestedThingDef == null)
+            {
+                wild.plant.harvestedThingDef = cultivated.plant.harvestedThingDef;
+                changed = true;
+            }
+
+            if (wild.plant.harvestYield <= 0.0001f)
+            {
+                wild.plant.harvestYield = cultivated.plant.harvestYield;
+                changed = true;
+            }
+
+            if (changed && Prefs.DevMode)
+                Log.Message($"[WildCultivation] Aligned {wildDefName} harvest -> {cultivated.defName}");
+        }
+
     }
 }
