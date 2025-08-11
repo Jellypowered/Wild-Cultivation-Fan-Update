@@ -46,7 +46,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>5.6</growDays>
 			<neverBlightable>true</neverBlightable>
-			<visualSizeRange>0.4~0.8</visualSizeRange>
+			<visualSizeRange Inherit="False">0.4~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.01</AridShrubland>
@@ -96,7 +96,7 @@
 			<topWindExposure>0.05</topWindExposure>
 			<growDays>10.4</growDays>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_PumpkinPlantImmature</immatureGraphicPath>
-			<visualSizeRange>0.5~0.9</visualSizeRange>
+			<visualSizeRange Inherit="False">0.5~0.9</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.01</AridShrubland>
@@ -147,7 +147,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>5.2</growDays>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_PepperPlantImmature</immatureGraphicPath>
-			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<visualSizeRange Inherit="False">0.3~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.05</AridShrubland>
@@ -198,7 +198,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6.5</growDays>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_PeaPlantImmature</immatureGraphicPath>
-			<visualSizeRange>0.3~1</visualSizeRange>
+			<visualSizeRange Inherit="False">0.3~1</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.02</AridShrubland>
@@ -249,7 +249,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6</growDays>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_EggplantPlantImmature</immatureGraphicPath>
-			<visualSizeRange>0.3~1</visualSizeRange>
+			<visualSizeRange Inherit="False">0.3~1</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.05</AridShrubland>
@@ -299,7 +299,7 @@
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>6.2</growDays>
 			<immatureGraphicPath>Things/Plant/Crops/VCE_CabbageImmature</immatureGraphicPath>
-			<visualSizeRange>0.3~1</visualSizeRange>
+			<visualSizeRange Inherit="False">0.3~1</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.00</AridShrubland>
@@ -350,7 +350,7 @@
 			<harvestWork>200</harvestWork>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>5.7</growDays>			
-			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<visualSizeRange Inherit="False">0.3~0.8</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.005</AridShrubland>
@@ -398,7 +398,7 @@
 			<harvestWork>200</harvestWork>
 			<topWindExposure>0.1</topWindExposure>
 			<growDays>7.2</growDays>			
-			<visualSizeRange>0.3~1</visualSizeRange>
+			<visualSizeRange Inherit="False">0.3~1</visualSizeRange>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildBiomes>
 				<AridShrubland>0.05</AridShrubland>
